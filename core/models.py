@@ -16,7 +16,7 @@ class SamGovtData(models.Model):
     archiveDate = models.DateField()
     typeOfSetAsideDescription = models.CharField(max_length=500, null=True)
     typeOfSetAside = models.CharField(max_length=80, null=True)
-    responseDeadLine = models.DateField()
+    responseDeadLine = models.CharField(max_length=255,null=True)
     naicsCode = models.CharField(max_length=255, null=True)
     classificationCode = models.CharField(max_length=255, null=True)
     active = models.CharField(max_length=80, null=True)
